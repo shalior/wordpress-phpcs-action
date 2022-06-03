@@ -1,4 +1,4 @@
-# action-phpcs-wordpress
+# WordPress PHP Code Sniffer GitHub action
 
 [![release](https://github.com/shalior/wordpress-phpcs-action/workflows/release/badge.svg)](https://github.com/shalior/action-phpcs-wordpress/actions?query=workflow%3Arelease)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/shalior/wordpress-phpcs-action?logo=github&sort=semver)](https://github.com/shalior/action-phpcs-wordpress/releases)
