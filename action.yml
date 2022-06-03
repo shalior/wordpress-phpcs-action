@@ -1,0 +1,26 @@
+name: 'Run phpcs-wordpress and fix using phpcbf'
+description: 'Run PHPCS and fix errors using PHPCBF'
+author: 'shalior'
+inputs:
+  github_token:
+    description: 'GITHUB_TOKEN'
+    default: '${{ github.token }}'
+  workdir:
+    description: 'Working directory relative to the root directory.'
+    default: '.'
+  phpcs_args:
+    description: 'Additional PHPCS flags'
+    default: '.'
+  phpcs_standard:
+    description: 'Coding standard for PHPCS to use when checking files'
+    default: 'WordPress'
+  use_default_configuration_file:
+    description: 'Whether to use default configuration file or not'
+    default: 'true'
+  phpcbf_args:
+      description: 'Additional PHPCBF flags'
+      default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
