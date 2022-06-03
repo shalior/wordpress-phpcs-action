@@ -1,5 +1,5 @@
 name: 'Run & fix PHP Code Sniffer'
-description: '🤝 Run PHPCS and fix errors using PHPCBF on wordpress code bases'
+description: '🤝 Run PHPCS and fix errors using PHPCBF on wordpress and other php code bases'
 author: 'shalior'
 inputs:
   github_token:
