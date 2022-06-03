@@ -1,5 +1,5 @@
-name: 'Run phpcs-wordpress and fix using phpcbf'
-description: 'Run PHPCS and fix errors using PHPCBF'
+name: 'Run and fix PHP Code Sniffer on WordPress'
+description: '🤝 Run PHPCS and fix errors using PHPCBF'
 author: 'shalior'
 inputs:
   github_token:
@@ -24,3 +24,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 
+branding:
+  icon: 'arrow-right'
+  color: 'green'
