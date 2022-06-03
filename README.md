@@ -1,7 +1,12 @@
-# WordPress PHP Code Sniffer GitHub action
+## PHP Code Sniffer GitHub action
+### Run and fix errors
 
 [![release](https://github.com/shalior/wordpress-phpcs-action/workflows/release/badge.svg)](https://github.com/shalior/action-phpcs-wordpress/actions?query=workflow%3Arelease)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/shalior/wordpress-phpcs-action?logo=github&sort=semver)](https://github.com/shalior/action-phpcs-wordpress/releases)
+
+- **Works on every PHP code base**, including **WordPress**(all rules are bundled).
+- Supports configuration files (`phpcs.xml`, `phpcs.xml.dist`, ...).
+- Fixes all fixable errors.
 
 This action runs PHPCS and fix errors using PHPCBF. If the errors are not fixable the job will fail, if they are phpcbf will fix them.
 The WordPress rulesets are bundled and made available to `phpcs`. The action supports using PHPCS configuration files if there is a `phpcs.xml` or other supported file names.
