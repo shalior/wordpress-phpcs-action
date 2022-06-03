@@ -1,8 +1,7 @@
 # action-phpcs-wordpress
 
-[![release](https://github.com/shalior/action-phpcs-wordpress/workflows/release/badge.svg)](https://github.com/shalior/action-phpcs-wordpress/actions?query=workflow%3Arelease)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/shalior/action-phpcs-wordpress?logo=github&sort=semver)](https://github.com/shalior/action-phpcs-wordpress/releases)
-[![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
+[![release](https://github.com/shalior/wordpress-phpcs-action/workflows/release/badge.svg)](https://github.com/shalior/action-phpcs-wordpress/actions?query=workflow%3Arelease)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/shalior/wordpress-phpcs-action?logo=github&sort=semver)](https://github.com/shalior/action-phpcs-wordpress/releases)
 
 This action runs PHPCS and fix errors using PHPCBF. If the errors are not fixable the job will fail, if they are phpcbf will fix them.
 The WordPress rulesets are bundled and made available to `phpcs`. The action supports using PHPCS configuration files if there is a `phpcs.xml` or other supported file names.
