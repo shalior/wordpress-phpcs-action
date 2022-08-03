@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: shalior/action-phpcs-wordpress@master
+      - uses: shalior/wordpress-phpcs-action@master
         with:
           github_token: ${{ secrets.github_token }}
           use_default_configuration_file: true
