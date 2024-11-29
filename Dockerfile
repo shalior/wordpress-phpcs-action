@@ -9,11 +9,13 @@ ENV PHPCS_VERSION=3.6.2
 # https://github.com/sirbrillig/phpcs-variable-analysis/releases
 # https://github.com/phpcompatibility/phpcompatibility/releases
 # https://github.com/phpcompatibility/phpcompatibilitywp/releases
+# https://github.com/PHPCSStandards/PHPCSUtils/releases
 ENV RULESET_WP_CODING_STANDARDS_VERSION=3.1.0 \
   RULESET_VIP_CODING_STANDARDS_VERSION=3.0.1 \
   RULESET_PHPCS_VARIABLE_ANALYSIS_VERSION=2.11.19 \
   RULESET_PHP_COMPATIBILITY_VERSION=9.3.5 \
-  RULESET_PHP_COMPATIBILITY_WP_VERSION=2.1.5
+  RULESET_PHP_COMPATIBILITY_WP_VERSION=2.1.5 \
+  RULESET_PHPCS_UTILS_VERSION=1.0.12
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
@@ -33,6 +35,7 @@ RUN wget -O - -q https://github.com/Automattic/VIP-Coding-Standards/archive/${RU
 RUN wget -O - -q https://github.com/sirbrillig/phpcs-variable-analysis/archive/v${RULESET_PHPCS_VARIABLE_ANALYSIS_VERSION}.tar.gz | tar zxv -C /tmp/rulesets --strip-components 1 --wildcards-match-slash --wildcards '*/VariableAnalysis*'
 RUN wget -O - -q https://github.com/PHPCompatibility/PHPCompatibility/archive/${RULESET_PHP_COMPATIBILITY_VERSION}.tar.gz | tar zxv -C /tmp/rulesets --strip-components 1 --wildcards-match-slash --wildcards '*/PHPCompatibility*'
 RUN wget -O - -q https://github.com/PHPCompatibility/PHPCompatibilityWP/archive/${RULESET_PHP_COMPATIBILITY_WP_VERSION}.tar.gz | tar zxv -C /tmp/rulesets --strip-components 1 --wildcards-match-slash --wildcards '*/PHPCompatibility*'
+RUN wget -O - -q https://github.com/PHPCSStandards/PHPCSUtils/archive/refs/tags/${RULESET_PHPCS_UTILS_VERSION}.tar.gz | tar zxv -C /tmp/rulesets --strip-components 1 --wildcards-match-slash --wildcards '*/PHPCSUtils*'
 
 COPY entrypoint.sh /entrypoint.sh
 
