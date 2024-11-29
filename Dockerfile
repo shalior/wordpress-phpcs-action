@@ -1,7 +1,7 @@
 FROM php:7.4-alpine
 
 # tools
-ENV PHPCS_VERSION=3.6.2
+ENV PHPCS_VERSION=3.11.1
 
 # rulesets
 # https://github.com/WordPress/WordPress-Coding-Standards
@@ -25,8 +25,8 @@ SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 RUN apk --no-cache add git
 
 # tools
-RUN wget -P /usr/local/bin -q https://github.com/squizlabs/PHP_CodeSniffer/releases/download/${PHPCS_VERSION}/phpcs.phar
-RUN wget -P /usr/local/bin -q https://github.com/squizlabs/PHP_CodeSniffer/releases/download/${PHPCS_VERSION}/phpcbf.phar
+RUN wget -P /usr/local/bin -q https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/download/${PHPCS_VERSION}/phpcs.phar
+RUN wget -P /usr/local/bin -q https://github.com/PHPCSStandards/PHP_CodeSniffer/releases/download/${PHPCS_VERSION}/phpcbf.phar
 RUN chmod +x /usr/local/bin/phpcs.phar
 RUN chmod +x /usr/local/bin/phpcbf.phar
 
