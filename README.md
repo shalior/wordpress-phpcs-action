@@ -63,18 +63,18 @@ The following sniffs are currently available. You can configure the standard(s) 
 
 - MySource
 - PEAR
-- PHPCompatibility
-- PHPCompatibilityWP
+- PHPCompatibility: `9.3.5`
+- PHPCompatibilityWP: `2.1.5`
 - PSR1
 - PSR12
 - PSR2
 - Squiz
-- WordPress
-- WordPress-Core
-- Wordpress-Docs
-- WordPress-Extra
-- WordPress-VIP-Go
-- WordPressVIPMinimum
+- WordPress: `3.1.0` 
+- WordPress-Core: `3.1.0` 
+- Wordpress-Docs: `3.1.0` 
+- WordPress-Extra: `3.1.0` 
+- WordPress-VIP-Go: `3.0.1`
+- WordPressVIPMinimum: `3.0.1`
 - Zend
 - (Soon) WooCommerce
 

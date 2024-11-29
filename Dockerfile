@@ -9,11 +9,11 @@ ENV PHPCS_VERSION=3.6.2
 # https://github.com/sirbrillig/phpcs-variable-analysis/releases
 # https://github.com/phpcompatibility/phpcompatibility/releases
 # https://github.com/phpcompatibility/phpcompatibilitywp/releases
-ENV RULESET_WP_CODING_STANDARDS_VERSION=2.3.0 \
-  RULESET_VIP_CODING_STANDARDS_VERSION=2.3.2 \
-  RULESET_PHPCS_VARIABLE_ANALYSIS_VERSION=2.11.0 \
+ENV RULESET_WP_CODING_STANDARDS_VERSION=3.1.0 \
+  RULESET_VIP_CODING_STANDARDS_VERSION=3.0.1 \
+  RULESET_PHPCS_VARIABLE_ANALYSIS_VERSION=2.11.19 \
   RULESET_PHP_COMPATIBILITY_VERSION=9.3.5 \
-  RULESET_PHP_COMPATIBILITY_WP_VERSION=2.1.1
+  RULESET_PHP_COMPATIBILITY_WP_VERSION=2.1.5
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 

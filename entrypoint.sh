@@ -10,11 +10,9 @@ fi
 run_phpcs() {
   if [ "${INPUT_USE_DEFAULT_CONFIGURATION_FILE}" = true ]; then
     /usr/local/bin/phpcs.phar \
-      --report-checkstyle \
       "${INPUT_PHPCS_ARGS:-\.}"
   else
     /usr/local/bin/phpcs.phar \
-      --report-checkstyle \
       --standard="${INPUT_PHPCS_STANDARD}" \
       "${INPUT_PHPCS_ARGS:-\.}"
   fi
@@ -56,6 +54,7 @@ if [ "${RESULT}" -ne 0 ]; then
     run_phpcbf
 
     # rerun phpcs
+    echo "Running phpcs again"
     run_phpcs
 
     SECOND_PHPCS_RESULT=$?
